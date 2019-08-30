@@ -1,0 +1,23 @@
+#Object Oriented Programming
+----------------------------
+
+1)  Intro to OOP:
+
+2)  BasicLayout:
+
+3)  Class Variables
+        -Applies to the whole class. 
+        -Can be used when the variable needs to be accessed across all instances, so rather than 
+        creating instance Variables
+        -Number of students was the class variable starting at 0. And everytime the self instance was 
+        called, it added 1 to the variable. 
+        -You cannot use 'self.variableName' but rather 'Class.variableName' 
+
+
+4)  Class Methods
+        Continues from Class Variables using the same example, but this time adding a @classMethod 
+        Why use Class methods?
+
+5) Static Methods   
+        Follows from above example- 
+        Why use Static methods?
