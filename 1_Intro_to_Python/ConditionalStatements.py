@@ -2,7 +2,7 @@ import random  # Random module
 
 while True:
         
-    number = input('Press a number from 0 to 9 to randomize it: ')
+    number = int(input('Press a number from 0 to 9 to randomize it: '))
     if number >= 10:
         print('Should have followed my instructions')
         break   
