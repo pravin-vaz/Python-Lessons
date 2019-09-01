@@ -18,7 +18,7 @@ class Student:
     def Bt(self):                 #returning a bloodType function   
         return'{} bloodtype is {}'.format(self.first, self.bloodType)
     
-@classmethod
+@classmethod                        #declaring a class method
 def randomClassMethod(cls):
     pass
 
