@@ -14,3 +14,4 @@ print(o[-6:-1])   # In this case, the count has started from the end of the stri
 
 p = " Namaste " 
 print(len(p))     # len function returns the value of the length, it will also count empty spaces inside the quote marks  
+
