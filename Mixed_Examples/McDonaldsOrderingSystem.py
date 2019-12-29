@@ -1,4 +1,6 @@
-#!/usr/bin/env python
+# from https://codereview.stackexchange.com/questions/176377/mcdonalds-food-order-system
+# Will be very useful when you are showing how to setup a simple ordering system
+
 
 import collections
 from string import capwords
@@ -54,7 +56,7 @@ if __name__ == '__main__':
         quantity = get_quantity(choice)
         orders[choice] += quantity
         choices[choice].stock -= quantity
-        ordering = input("Do you want to order more items? [y/*] ").lower()
+        ordering = input("Do you want to order more items? [y/n] ").lower()
     print("\nThank you for ordering!\nYour total cost is: £{0}".format(
         sum([orders[choice] * choices[choice].price 
         for choice in choices.keys()])

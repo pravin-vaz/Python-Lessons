@@ -25,8 +25,7 @@ print(weekdays[-3:-1])
 
 # Creating a list from a string
 
-list('Welcome')
-print(list)
+
 
 # adding a sequence
 
@@ -37,7 +36,7 @@ words = ['kia'] + ['ora']
 print(words)
 
 # note you cannot add a sequence of numbers and string
-####################################################################################
+
 # checking for membership in a list
 
 secure_vault = [
@@ -55,7 +54,7 @@ if [username, pin] in secure_vault:
 else: 
     print('Access not granted')
 
---------------------------------------------------------------
+####################################################################################
 
 
 
