@@ -4,7 +4,7 @@ while True:
         
     number = int(input('Press a number from 0 to 9 to randomize it: '))
     if number >= 10:
-        print('Should have followed my instructions')
+        print('Should have followed my instructions. GoodBye')
         break   
     
     #CHALLENGE - TRY AND MAKE THE PROGRAM NOT BREAK IF THE PERSON ENTERS A NUMBER OVER 10
