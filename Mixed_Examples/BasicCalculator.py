@@ -1,4 +1,4 @@
-#Simple calculator no GUI. Make Functions for each operation
+#Simple calculator no GUI. Make Functions for each operation. 
 
 #Function to add
 def add(x, y): #receives two inputs
@@ -52,7 +52,7 @@ while True:
         elif choice == '4':
             print(num1, '*', num2, "=", multiply(num1, num2))
         break
-    
+    # had to separate this section as it took only one value
     elif choice in ('5', '6'):
         num = float(input("Enter number: "))
 

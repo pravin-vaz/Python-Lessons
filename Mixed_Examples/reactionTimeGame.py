@@ -8,6 +8,7 @@ print("Welcome to the Reaction Time Game")
 time.sleep(1)
 
 start=time.time()
+
 text = input("Press the return key?")
 end = time.time()
 
