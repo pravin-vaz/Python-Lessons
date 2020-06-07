@@ -1,5 +1,6 @@
 ####################################################################################################################################################
-# This lesson is to store some information in a location on the computer called a Variable. A Variable can change over the course of the program.  #
+# This lesson is to store some information in a location on the computer called a Variable.
+#  A Variable can change over the course of the program.  #
 # We will then print the variable on to the screen.                                                                                                #
 # ##################################################################################################################################################
 
