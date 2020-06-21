@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 '''was doing some lessons on Future learn and one of the tasks was to modify a quiz.
 so this was my solution'''
 
@@ -98,5 +97,5 @@ def game():
 
     
  
->>>>>>> 130b6e5de879110218c2f46be1146b9946722d81
+
 game()
