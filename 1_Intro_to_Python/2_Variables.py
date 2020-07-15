@@ -46,7 +46,7 @@ print('---------------------')
 #########################################################
 
 x, y, z = 'Audi ', 'Bentley ', 'Corvette '
-print('My three favorite cars are ' + x + y + z)
+print('My three favorite cars are ', x , y , z)
 
 # Key points about Variables
 # 1- must start with a letter or underscore character, and cannot start with a number or characters
