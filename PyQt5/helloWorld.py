@@ -1,40 +1,37 @@
-
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5 import QtWidgets
+import random
+from PySide2.QtWidgets import (QApplication, QLabel, QPushButton,
+                               QVBoxLayout, QWidget)
+from PySide2.QtCore import Slot, Qt
 
-
-class MyWindow(QMainWindow):
+class MyWidget(QWidget):
     def __init__(self):
-        super(MyWindow, self).__init__()
-        self.setGeometry(200, 200, 300, 300)
-        self.setWindowTitle("Microbit Greenhouse")
-        self.initUI()
+        QWidget.__init__(self)
 
-    def initUI(self):
+        self.hello = ["Hallo Welt", "你好，世界", "Hei maailma",
+            "Hola Mundo", "Привет мир"]
 
-        self.label = QtWidgets.QLabel(self)
-        self.label.setText("My label")
-        self.label.move(50,50)
+        self.button = QPushButton("Click me!")
+        self.text = QLabel("Hello World")
+        self.text.setAlignment(Qt.AlignCenter)
 
-        self.b1 = QtWidgets.QPushButton(self)
-        self.b1.setText("Click me")
-        self.b1.clicked.connect(self.buttonClicked)
-        
+        self.layout = QVBoxLayout()
+        self.layout.addWidget(self.text)
+        self.layout.addWidget(self.button)
+        self.setLayout(self.layout)
 
-    def buttonClicked(self):
-        self.label.setText("You pressed the button")
-        self.update()    
-    def update(self):
-        self.label.adjustSize()
+        # Connecting the signal
+        self.button.clicked.connect(self.magic)
 
-def window():
+    @Slot()
+    def magic(self):
+        self.text.setText(random.choice(self.hello))
+
+if __name__ == "__main__":
     app = QApplication(sys.argv)
-    win = MyWindow()
-    
 
-    win.show()
+    widget = MyWidget()
+    widget.resize(800, 600)
+    widget.show()
+
     sys.exit(app.exec_())
-
-window()
-
