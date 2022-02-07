@@ -1,5 +1,7 @@
 {
     "editor.fontFamily": "Arial, 'Courier New', monospace",
     "editor.fontSize": 16,
-    "python.pythonPath": "C:\\Users\\pravi\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"
+    "python.pythonPath": "C:\\Users\\pravi\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
