@@ -1,4 +1,4 @@
-# from https://codereview.stackexchange.com/questions/176377/mcdonalds-food-order-system
+# modified from https://codereview.stackexchange.com/questions/176377/mcdonalds-food-order-system
 # Will be very useful when you are showing how to setup a simple ordering system
 
 
