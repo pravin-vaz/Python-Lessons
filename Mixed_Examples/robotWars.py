@@ -1,3 +1,6 @@
+# basic robot wars like the vb activity. But could go all out and make it into OOP with a class etc.
+# 
+
 import time
 import random
 
@@ -7,7 +10,7 @@ def robot_wars():
         print("Welcome to Robot Wars!")
         time.sleep(2)
         
-        # Get robot names
+        # Get robot names - would love to have a list of 5 robots which are based on the robot wars live game.
         robot1 = input("Enter the name of the first robot: ")
         robot2 = input("Enter the name of the second robot: ")
         
@@ -21,7 +24,7 @@ def robot_wars():
         print("\nBattle Begins!\n")
         time.sleep(1)
         
-        # Start the battle - 5 rounds
+        # Start the battle - 5 rounds editable.
         for round_num in range(1, 6):
             print(f"Round {round_num}...")
             time.sleep(1)
@@ -36,6 +39,7 @@ def robot_wars():
             attack1 = random.choice(attack_words)
             attack2 = random.choice(attack_words)
             
+            # print result to screen
             print(f"{robot1} {attack1} {robot2}, causing {damage1} damage!")
             print(f"{robot2} {attack2} {robot1}, causing {damage2} damage!\n")
             
@@ -47,7 +51,8 @@ def robot_wars():
             
             print(f"{robot1} Energy: {energy1}")
             print(f"{robot2} Energy: {energy2}\n")
-            
+
+            # break if energy is 0
             if energy1 == 0 or energy2 == 0:
                 break
         
@@ -68,7 +73,7 @@ def robot_wars():
         else:
             print("\nIt's a tie! Both robots are equally matched!")
         
-        # Restart option
+        # Restart option - Strip to remove any spaces / characters and .lower returns in lower case
         restart = input("\nDo you want to play again? (yes/no): ").strip().lower()
         if restart != 'yes':
             print("Thanks for playing Robot Wars!")
